@@ -12,6 +12,7 @@ Backpropagation and training of neural networks. Assumes basic knowledge of Pyth
 - [YouTube video lecture](https://www.youtube.com/watch?v=VMj-3S1tku0)
 - [Jupyter notebook files](lectures/micrograd)
 - [micrograd Github repo](https://github.com/karpathy/micrograd)
+- [quiz](https://docs.google.com/forms/d/e/1FAIpQLScEE4lI1VB40C8902mX7QyPYNwvVL-stgTyFv90CBjzi8CfZg/viewform?usp=sf_link)
 
 ---
 
