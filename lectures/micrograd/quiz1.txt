@@ -1,59 +1,85 @@
-1. What is the purpose of `numpy.arange` in the context of this code?
-    a. It generates a sequence of numbers from -5 to 5 with step 0.25.
-    b. It computes the derivative of the function.
-    c. It is used to plot the function.
-    d. It is used to evaluate the function at certain points.
+Sure, I'll provide a quiz based on the provided code:
 
-2. What does the `f(x)` function do in this code?
-    a. It returns the square of `x`.
-    b. It computes the derivative of `x`.
-    c. It computes and returns the value of a quadratic function at `x`.
-    d. It generates an array of values from `x` to 5.
+1. **What is the purpose of the function `f(x)` defined at the beginning of the code?**
 
-3. How does the "more complex" section of the code demonstrate the concept of derivatives?
-    a. It computes the derivative using the limit definition.
-    b. It applies the power rule for derivatives.
-    c. It applies the product rule for derivatives.
-    d. It computes the derivative using the chain rule.
+    a) It generates a random number for each x.
+   
+    b) It calculates a quadratic function for the given x value.
+   
+    c) It plots a graph of the function for a given range of x values.
+   
+    d) It computes the derivative of the function for the given x value.
+    
+   **Answer: b**
 
-4. What is the purpose of class `Value` in this code?
-    a. It stores a number and its derivative.
-    b. It represents a neuron in a neural network.
-    c. It generates an array of numbers.
-    d. It computes the derivative of a function.
+2. **What does the code `(f(x + h) - f(x))/h` calculate?**
 
-5. Explain the `backward` function in the `Value` class.
-    a. It computes the derivative of a function.
-    b. It initializes the gradient to zero.
-    c. It traverses the computational graph and applies the chain rule to compute gradients.
-    d. It generates an array of numbers.
+    a) It computes the integral of the function `f` at the point `x`.
+   
+    b) It calculates the derivative of the function `f` at the point `x`.
+   
+    c) It calculates the area under the curve of the function `f`.
+   
+    d) It approximates the second derivative of the function `f` at the point `x`.
+   
+   **Answer: b**
 
-6. Why do `a.data`, `b.data`, `c.data`, `f.data` get incremented by `0.01` times their gradient after `L` is computed?
-    a. It is the implementation of the gradient descent optimization algorithm.
-    b. It is used to calculate the second derivative.
-    c. It is a way to calculate the integral of the function.
-    d. It is a part of the backpropagation algorithm.
+3. **What is the `Value` class designed to represent in this code?**
 
-7. What is the purpose of the `lol` function in this code?
-    a. It visualizes the computational graph.
-    b. It computes the value of a complex function.
-    c. It verifies the computed gradient with numerical differentiation.
-    d. It initializes the gradients of `a`, `b`, `c`, and `f` to zero.
+    a) It represents the inputs and outputs of the neural network.
+   
+    b) It represents a node in a computational graph, storing data and gradient, and also defines how to compute gradient.
+   
+    c) It represents the weights and biases in a neural network.
+   
+    d) It represents the loss function to be minimized during training.
+   
+   **Answer: b**
 
-8. What is happening in the code block that begins with `# inputs x1,x2`?
-    a. It is initializing the inputs and weights of a neuron.
-    b. It is training a neural network.
-    c. It is implementing a feedforward step in a neural network.
-    d. It is calculating the loss of a neural network.
+4. **What does the `backward` method do in the `Value` class?**
 
-9. How is the concept of a neuron in a neural network represented in this code?
-    a. With the `lol` function.
-    b. With the `Value` class.
-    c. With the combination of `Value` objects and their methods like `__add__`, `__mul__`, and `tanh`.
-    d. With the `backward` function in the `Value` class.
+    a) It performs the forward pass of the computational graph.
+   
+    b) It calculates the loss function for the given inputs.
+   
+    c) It performs the backward pass through the computational graph, calculating the gradients of all preceding nodes.
+   
+    d) It updates the weights and biases in the network based on the gradients.
+   
+   **Answer: c**
 
-10. Explain the purpose of the `build_topo` function and what "topo" represents in this context.
-    a. `build_topo` generates an array of numbers; "topo" represents the derivative.
-    b. `build_topo` represents a neuron; "topo" represents the weights of the neuron.
-    c. build_topo performs a depth-first search on the computational graph and "topo" is a list that stores the graph in topological order.
-    d. build_topo calculates the loss function; "topo" represents the loss.
+5. **What does the function `lol()` do in the code?**
+
+    a) It calculates the gradient of a loss function with respect to a single parameter, `b`, using finite difference.
+   
+    b) It calculates the output of a multilayer perceptron for a given input.
+   
+    c) It trains a neural network for one epoch.
+   
+    d) It initializes the weights and biases of the network.
+   
+   **Answer: a**
+
+6. **What does the `draw_dot` function do in the code?**
+
+    a) It creates a visual representation of the computational graph using the `graphviz` library.
+   
+    b) It trains the model and updates the weights and biases.
+   
+    c) It performs a forward pass through the computational graph.
+   
+    d) It initializes the parameters of the computational graph.
+   
+   **Answer: a**
+
+7. **What are `x1`, `x2`, `w1`, `w2`, and `b` in the latter part of the code?**
+
+    a) They are the weights and biases of the neural network.
+   
+    b) `x1` and `x2` are inputs, `w1` and `w2` are weights, and `b` is a bias in a single neuron model.
+   
+    c) They represent the gradient of the loss function with respect to the inputs, weights, and biases.
+   
+    d) `x1` and `x2` are the outputs of the neural network, `w1` and `w2` are the inputs, and `b` is the learning rate.
+   
+   **Answer: b**
