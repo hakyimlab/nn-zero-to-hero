@@ -1,35 +1,59 @@
-Sure, here's a quiz to test understanding of the code:
-
-1. What is the purpose of the `f(x)` function? What does it return when `x = 3.0`?
+1. **What does the `backward` method in the `Value` class do?**
    
-2. In the given code, what does this line `ys = f(xs)` mean?
+    a) It forwards the data through the computational graph.
+   
+    b) It performs the backward pass of the computational graph and updates the gradients of all preceding nodes.
+   
+    c) It calculates the forward pass through the neuron.
+   
+    d) It computes the weight updates during training.
+    
+   **Answer: b** 
 
-3. How is the slope of a function at a point calculated using numerical differentiation in this code?
+2. **What is the function of the `trace` and `draw_dot` methods in this code?**
 
-4. How does the `Value` class in the code provide support for operations like addition, multiplication, power etc?
+    a) They perform weight updates in the model.
+   
+    b) They handle the forward and backward propagation respectively.
+   
+    c) `trace` generates all nodes and edges starting from a given root while `draw_dot` saves the model weights into a file.
+   
+    d) `trace` generates all nodes and edges starting from a given root while `draw_dot` is used for creating a visual representation of the computational graph.
 
-5. What does the `backward` method in the `Value` class do?
+   **Answer: d**
 
-6. What is the role of `trace` and `draw_dot` functions in the given code?
+3. **What are the operations performed in the `__call__` method of the `Neuron` class?**
 
-7. What is happening in this section of code:
-    ```python
-    x1 = Value(2.0, label='x1')
-    x2 = Value(0.0, label='x2')
-    w1 = Value(-3.0, label='w1')
-    w2 = Value(1.0, label='w2')
-    b = Value(6.8813735870195432, label='b')
-    x1w1 = x1*w1; x1w1.label = 'x1*w1'
-    x2w2 = x2*w2; x2w2.label = 'x2*w2'
-    x1w1x2w2 = x1w1 + x2w2; x1w1x2w2.label = 'x1*w1 + x2*w2'
-    n = x1w1x2w2 + b; n.label = 'n'
-    o = n.tanh(); o.label = 'o'
-    o.backward()
-    ```
+    a) It initializes the weights and biases of the neuron.
+   
+    b) It performs a forward pass through the neuron, computing the weighted sum of its inputs and then passing that sum through the `tanh` activation function.
+   
+    c) It performs the backward pass and updates the gradients.
+   
+    d) It handles the weight updates during training.
 
-8. Can you explain what the `Neuron` class represents and what methods it has?
+   **Answer: b**
 
-9. What does the `MLP` class represent and what is happening during its initialization?
+4. **What is the purpose of the `MLP` class in the code?**
 
-10. In the code's last loop, explain what happens at each step of each iteration.
+    a) It defines a feedforward neural network architecture with an arbitrary number of hidden layers.
+   
+    b) It performs weight initialization for the neural network.
+   
+    c) It handles the training and backpropagation for the model.
+   
+    d) It calculates the loss function for the neural network.
 
+   **Answer: a**
+
+5. **What is the final output (`ypred`) of the code?**
+
+    a) The predicted class labels for the given input.
+   
+    b) The updated weights and biases after training.
+   
+    c) The output of the network for each input in `xs` after 20 updates.
+   
+    d) The gradients for each neuron in the network.
+
+   **Answer: c**
