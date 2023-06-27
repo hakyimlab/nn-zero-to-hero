@@ -1,0 +1,35 @@
+Sure, here's a quiz to test understanding of the code:
+
+1. What is the purpose of the `f(x)` function? What does it return when `x = 3.0`?
+   
+2. In the given code, what does this line `ys = f(xs)` mean?
+
+3. How is the slope of a function at a point calculated using numerical differentiation in this code?
+
+4. How does the `Value` class in the code provide support for operations like addition, multiplication, power etc?
+
+5. What does the `backward` method in the `Value` class do?
+
+6. What is the role of `trace` and `draw_dot` functions in the given code?
+
+7. What is happening in this section of code:
+    ```python
+    x1 = Value(2.0, label='x1')
+    x2 = Value(0.0, label='x2')
+    w1 = Value(-3.0, label='w1')
+    w2 = Value(1.0, label='w2')
+    b = Value(6.8813735870195432, label='b')
+    x1w1 = x1*w1; x1w1.label = 'x1*w1'
+    x2w2 = x2*w2; x2w2.label = 'x2*w2'
+    x1w1x2w2 = x1w1 + x2w2; x1w1x2w2.label = 'x1*w1 + x2*w2'
+    n = x1w1x2w2 + b; n.label = 'n'
+    o = n.tanh(); o.label = 'o'
+    o.backward()
+    ```
+
+8. Can you explain what the `Neuron` class represents and what methods it has?
+
+9. What does the `MLP` class represent and what is happening during its initialization?
+
+10. In the code's last loop, explain what happens at each step of each iteration.
+
