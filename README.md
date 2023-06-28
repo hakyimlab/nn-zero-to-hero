@@ -23,6 +23,7 @@ We implement a bigram character-level language model, which we will further comp
 - [YouTube video lecture](https://www.youtube.com/watch?v=PaCmpygFfXo)
 - [Jupyter notebook files](lectures/makemore/makemore_part1_bigrams.ipynb)
 - [makemore Github repo](https://github.com/karpathy/makemore)
+- [quiz](https://docs.google.com/forms/d/e/1FAIpQLSc2F3UOsyCXECNZSVgjwJQSL5GMXiMN9iQyn2xV43iSxdojJA/viewform?usp=sf_link)
 
 ---
 
