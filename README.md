@@ -34,7 +34,7 @@ We implement a multilayer perceptron (MLP) character-level language model. In th
 - [YouTube video lecture](https://youtu.be/TCH_1BHY58I)
 - [Jupyter notebook files](lectures/makemore/makemore_part2_mlp.ipynb)
 - [makemore Github repo](https://github.com/karpathy/makemore)
-- [quiz](https://docs.google.com/forms/d/1LcBExm95h8rKl-iSAXtHtO5ThdFZwhBTii1LMeCZ2m0/edit#settings)
+- [quiz](https://docs.google.com/forms/d/e/1FAIpQLSfjt9NBRPW1_Z3l6_4C7jJsDaGkIjpPfmyfz49GwP0o5o0vEg/viewform?usp=sf_link)
 
 ---
 
